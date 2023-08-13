@@ -4,7 +4,7 @@ const Pizza = () => {
   return (
     <div>
       <img src={pizzas} alt="spinaci" />
-      <h2>Pizza Spinaci</h2>
+      <h3>Pizza Spinaci</h3>
       <p>Tomato, mozarella, spinach, and ricotta cheese</p>
     </div>
   );
