@@ -1,12 +1,15 @@
-import pizzas from './pizzas/spinaci.jpg'
+import pizzas from "./pizzas/spinaci.jpg";
 
-const Pizza = () => {
+const Pizza = ({ pizzaObj }) => {
   return (
-    <div>
-      <img src={pizzas} alt="spinaci" />
-      <h3>Pizza Spinaci</h3>
-      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
-    </div>
+    <li className="pizza">
+      <img src={pizzas} alt={pizzaObj.name} />
+      <div>
+        <h3>{pizzaObj.name}</h3>
+        <p>{pizzaObj.ingredients}</p>
+        <span>{pizzaObj.price}</span>
+      </div>
+    </li>
   );
 };
 
